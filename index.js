@@ -1,4 +1,4 @@
-const connection = require("./model");
+const connection = require("./Model");
 const artists = require("./model/artist.model.js");
 const singles = require("./model/single.model.js");
 const mongoose = require("mongoose");
