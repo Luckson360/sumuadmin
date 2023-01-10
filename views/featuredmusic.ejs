@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="songlist.css">
+    <title>Sahara</title>
+  </head>
+  <style type="text/css">
+    .containnner{
+      display: flex;
+    }
+    audio{
+    	width: 100%;
+    	font-weight: 600;
+    	overflow: hidden;
+    }
+    p{
+      font-weight: 800;
+    }
+    label{
+      font-weight: 800;
+    }
+  </style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light-blue navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">SaharaAd</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Upload</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/edit">Edit </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/feature/music">Featured <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+  <div class="btn-singles-albums">
+    <a class="btn btn-primary btn-sm" href="/singles" role="button" style="background-color: #f15fa3; font-weight: 700;">Singles</a>
+<a class="btn btn-primary btn-sm" href="/albums" role="button" style="background-color: #f15fa3; font-weight: 700;">Albums</a>
+</div>
+<p>Unfeature</p>
+</div>
+  <div class="container">
+    <div class="editObj">
+    <div class="view-item">
+      <div class="vi-left">
+        <a href="song/<%= single.singlename %>"><img src="vv.jpg"></a>
+      </div>
+      <div class="vi-right">
+        <p class="title">
+          Fears and Faults
+        </p>
+        <p class="content">
+          Thew Boter  
+        </p>
+      </div>
+    </div>
+    <div class="actionbtns">
+    <button type="button" class="btn btn-success">UnFeature</button>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

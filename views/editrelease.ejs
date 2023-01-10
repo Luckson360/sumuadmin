@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="/slider.css">
+    <link rel="stylesheet" href="/songlist.css">
+    <title>SUMU</title>
+  </head>
+  <style type="text/css">
+    .containnner{
+      display: flex;
+    }
+    audio{
+      width: 100%;
+      font-weight: 600;
+      overflow: hidden;
+    }
+    p{
+      font-weight: 800;
+    }
+    label{
+      font-weight: 800;
+    }
+  </style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light-blue navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">SUMU</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Upload</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/edit">Edit <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <!--<a class="nav-link" href="/feature/music">Featured</a>-->
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+  <!--<div class="btn-singles-albums">
+    <a class="btn btn-primary btn-sm" href="/singles" role="button" style="background-color: #f15fa3; font-weight: 700;">Singles</a>
+<a class="btn btn-primary btn-sm" href="/albums" role="button" style="background-color: #f15fa3; font-weight: 700;">Albums</a>
+</div>-->
+<p>The Singles Part</p>
+</div>
+  <div class="container">
+    <% albums.forEach(function(album){ %>
+    <div class="editObj">
+    <div class="view-item">
+      <div class="vi-left">
+        <img src="/image/<%= album.coverArt %>">
+      </div>
+      <div class="vi-right">
+        <p class="title">
+          <%= album.singleTitle %>
+        </p>
+        <p class="content">
+          <%= album.artists %>  
+        </p>
+      </div>
+    </div>
+    <div class="actionbtns">
+      <form action="/delete/<%= album.government %>?_method=DELETE" method="post">
+    <button type="submit" class="btn btn-danger">Delete</button>
+  </form>
+  <form action="/feature/<%= album.government %>" method="post">
+    <button type="submit" class="btn btn-warning">Feature</button>
+  </form>
+  <form action="/unfeature/u/<%= album.government %>" method="post">
+    <button type="submit" class="btn btn-success">Unfeature</button>
+  </form>
+  </div>
+  </div>
+  <br>
+
+<% }) %>
+</div>
+<!-- the album part 
+  <div class="container">
+    <p>The album part</p>
+    <div class="editObj">
+      <% albums.forEach(function(album){ %>
+    <div class="view-item">
+      <div class="vi-left">
+        <img src="view/image/<%= album.coverArt %>">
+      </div>
+      <div class="vi-right">
+        <p class="title">
+          <%= album.singleTitle %>
+        </p>
+        <p class="content">
+          <%= album.albumArtist %>  
+        </p>
+      </div>
+    </div>
+    <div class="actionbtns">
+    <button type="button" class="btn btn-danger">Delete</button>
+    <button type="button" class="btn btn-warning" id="aeditbtn">Edit</button>
+    <button type="button" class="btn btn-success">Feature</button>
+  </div>
+  </div>
+  <% }) %>
+<br>
+<% albums.forEach(function(album){ %>
+<div class="editObj" id="foralbum">
+    <div class="view-item">
+      <div class="vi-left">
+        <img src="/image/<%= album.coverArt %>">
+      </div>
+      <div class="vi-right">
+        <p class="title">
+          <%= album.singleTitle %>
+        </p>
+        <p class="content">
+          <%= album.artists %>  
+        </p>
+      </div>
+    </div>
+  </div>
+<form action="" id="my-album-form">
+  <input class="form-control" type="text" placeholder="<%= album.id %>" readonly>
+<br>
+  <div class="form-group">
+    <label for="albumTrackName">AlbumTrack Name</label>
+    <input type="text" class="form-control" id="albumTrackName" placeholder="Track Title" name="singleTitle">
+  </div>
+<div class="form-group">
+    <label for="albumTrackArtist">Album Track Artist</label>
+    <input type="text" class="form-control" id="albumTrackArtist" placeholder="New Single Artist" name="artistName">
+  </div>
+<button type="submit" class="btn btn-warning">Update</button>
+<br>
+<br>
+</form>
+<% }) %> -->
+</div><script src="/jquery.js" type="text/javascript">
+    </script>
+<script src="/javas.js" type="text/javascript">
+    </script>
+</body>
+</html>

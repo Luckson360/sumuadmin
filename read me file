@@ -1,0 +1,50 @@
+read me file 
+1.the genre field in the model, the year, the date of release
+2.the top artists feature , the most popular genres
+3.the search box , the more from artist feature ,
+4.most popular from artist ,
+5.automatic release dates for the uploads  
+
+
+the styles to be done by bootstrap and other frameworks then combine those with the 
+angular with the other ion
+
+tonights searching 
+1.angular and react courses
+2.how to get contents of an obj in an array in mongodb//solution is to use the unwind
+3.a player for the site a well styled one ,, with the features we would like
+4.the github and git stuff to an already created project 
+5.the heroku app deploy 2020 tutorial ,,and check the pricing and stuff
+6.check how to download free music streaming webiste app templates and stuff //u have to buy the things
+7.how to fully hanlde errors and stuff ,, hacker protection and stuff 
+8.how to add fields from a particular search in mongodb
+9.how to create the search box iin mongodb ..hj-*/	3//got it there now
+10.how to get access to the already released music and add it to the 
+apps music....//data providers reading about it now
+11.how to get a music streaming web app be taken seriousy and how to 
+be included in the music distribution companies//hustle and endless grinding 
+
+//*************************************************************//
+the changes today in the project=6-12-2020
+*the editing part for the admin
+*line 412 filtering by RD
+*line 1040105 the uploading part for the already existing artists
+*line 27,28,29 in the schema for the Rd, country, genre, meta data
+//*************************************************************//
+create the featured music feature
+
+////On the artist page allow the play artist feature on it 
+////and on all aother pages when it gets More from artist feature 
+//have it not repeat the song thats been selected right there and sort that by stats
+////complete the play thru after a song is done on the album page 
+//theres situation right there 
+////on the album page add the download album for all the files as zip 
+////have the artists sorted by the most streamed and so on
+//we might have to integrate it into the schema so its just updated all the time for easy queryn
+////use the unwind for the album page 
+
+////the thew boter traq on the platforms and stuff
+////check out how to upload a streaming app to heroku or any other 
+////check out how to make the download a xip file and not individual ,, download that player from 
+//that website and the other promising themes so we can get over with it and then boom 
+//the demo will be out which will be a fund raiser for the mobile app and the web and desktop 
